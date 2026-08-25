@@ -6,7 +6,7 @@
     --text-muted: #888888;
     --accent-yellow: #d9b310;
     --accent-dark-yellow: #9e820b;
-    
+
     --font-heading: 'Cinzel', serif;
     --font-body: 'Inter', sans-serif;
 }
@@ -29,7 +29,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     font-weight: 600;
 }
@@ -74,7 +79,7 @@ a {
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: all 0.3s ease;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .navbar.scrolled {
@@ -216,7 +221,7 @@ a {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
 .about-image img {
@@ -277,9 +282,9 @@ a {
 .card {
     background: var(--bg-card);
     padding: 3rem 2rem;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 5px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.4s ease;
 }
 
@@ -371,10 +376,10 @@ a {
 .writing-card {
     text-align: center;
     padding: 2rem;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 5px;
     background: var(--bg-card);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
@@ -398,7 +403,7 @@ a {
 /* Contact */
 .contact {
     background: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.95)), url('assets/lastpage.png') no-repeat center center/cover;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -440,6 +445,7 @@ a {
     position: relative;
     display: inline-block;
 }
+
 .glitch::before,
 .glitch::after {
     content: attr(data-text);
@@ -450,12 +456,14 @@ a {
     height: 100%;
     opacity: 0.8;
 }
+
 .glitch::before {
     left: 2px;
     text-shadow: -2px 0 var(--accent-yellow);
     clip: rect(24px, 550px, 90px, 0);
     animation: glitch-anim 3s infinite linear alternate-reverse;
 }
+
 .glitch::after {
     left: -2px;
     text-shadow: -2px 0 var(--text-muted);
@@ -464,12 +472,29 @@ a {
 }
 
 @keyframes glitch-anim {
-    0% { clip: rect(10px, 9999px, 86px, 0); }
-    20% { clip: rect(41px, 9999px, 32px, 0); }
-    40% { clip: rect(98px, 9999px, 10px, 0); }
-    60% { clip: rect(24px, 9999px, 60px, 0); }
-    80% { clip: rect(77px, 9999px, 80px, 0); }
-    100% { clip: rect(44px, 9999px, 20px, 0); }
+    0% {
+        clip: rect(10px, 9999px, 86px, 0);
+    }
+
+    20% {
+        clip: rect(41px, 9999px, 32px, 0);
+    }
+
+    40% {
+        clip: rect(98px, 9999px, 10px, 0);
+    }
+
+    60% {
+        clip: rect(24px, 9999px, 60px, 0);
+    }
+
+    80% {
+        clip: rect(77px, 9999px, 80px, 0);
+    }
+
+    100% {
+        clip: rect(44px, 9999px, 20px, 0);
+    }
 }
 
 /* Posters & Photography Grids */
@@ -500,7 +525,7 @@ a {
 .photo-placeholder {
     aspect-ratio: 4/3;
     background: #1a1a1a;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -514,7 +539,7 @@ a {
     height: auto;
     border-radius: 5px;
     transition: transform 0.3s ease, border-color 0.3s ease;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     display: block;
     margin-bottom: 1.5rem;
     break-inside: avoid;
@@ -526,7 +551,7 @@ a {
     object-fit: cover;
     border-radius: 5px;
     transition: transform 0.3s ease, border-color 0.3s ease;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     display: block;
 }
 
@@ -546,26 +571,34 @@ a {
 
 /* Media Queries */
 @media (max-width: 900px) {
-    .about-grid, .skills-wrapper {
+
+    .about-grid,
+    .skills-wrapper {
         grid-template-columns: 1fr;
     }
+
     .writing-grid {
         grid-template-columns: 1fr;
     }
+
     .hero-content h1 {
         font-size: 4rem;
     }
+
     .contact-info {
         flex-direction: column;
         gap: 1.5rem;
     }
+
     .nav-links {
         display: none;
     }
+
     .posters-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
     .photography-grid {
         column-count: 2;
     }
