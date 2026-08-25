@@ -121,7 +121,7 @@ a {
     background: url('assets/firstpage.png') no-repeat center center/contain;
     text-align: center;
     overflow: hidden;
-    padding-bottom: 15vh;
+    padding-bottom: 4vh;
 }
 
 .hero-overlay {
@@ -130,7 +130,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(7, 7, 7, 0.1) 0%, rgba(7, 7, 7, 0.8) 100%);
+    background: linear-gradient(to bottom, rgba(7, 7, 7, 0.2) 0%, rgba(7, 7, 7, 0.85) 50%, rgba(7, 7, 7, 0.95) 100%);
     z-index: 1;
 }
 
