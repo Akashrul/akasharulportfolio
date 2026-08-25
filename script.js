@@ -45,16 +45,16 @@ tl.from('.navbar', {
     ease: 'power3.out'
 }, '-=0.6');
 
-// Scroll Animations
+// Scroll Animations for Titles
 gsap.utils.toArray('.section-title').forEach(title => {
     gsap.from(title, {
         scrollTrigger: {
             trigger: title,
-            start: 'top 80%',
+            start: 'top 85%',
         },
-        y: 50,
+        y: 30,
         opacity: 0,
-        duration: 1,
+        duration: 0.8,
         ease: 'power3.out'
     });
 });
@@ -63,63 +63,28 @@ gsap.utils.toArray('.section-title').forEach(title => {
 gsap.from('.about-image', {
     scrollTrigger: {
         trigger: '.about',
-        start: 'top 70%',
+        start: 'top 75%',
     },
-    x: -50,
+    x: -30,
     opacity: 0,
-    duration: 1,
+    duration: 0.8,
     ease: 'power3.out'
 });
 
 gsap.from('.about-text', {
     scrollTrigger: {
         trigger: '.about',
-        start: 'top 70%',
+        start: 'top 75%',
     },
-    x: 50,
+    x: 30,
     opacity: 0,
-    duration: 1,
+    duration: 0.8,
     ease: 'power3.out'
 });
 
-// Cards Staggered Animation
-gsap.from('.card', {
-    scrollTrigger: {
-        trigger: '.experience-grid',
-        start: 'top 80%',
-    },
-    y: 50,
-    opacity: 0,
-    duration: 0.8,
-    stagger: 0.2,
-    ease: 'power3.out'
-});
-
-// Skills Staggered Animation
-gsap.from('.skill-category', {
-    scrollTrigger: {
-        trigger: '.skills-wrapper',
-        start: 'top 80%',
-    },
-    y: 50,
-    opacity: 0,
-    duration: 0.8,
-    stagger: 0.2,
-    ease: 'power3.out'
-});
-
-// Writing Cards Staggered Animation
-gsap.from('.writing-card', {
-    scrollTrigger: {
-        trigger: '.writing-grid',
-        start: 'top 80%',
-    },
-    y: 50,
-    opacity: 0,
-    duration: 0.8,
-    stagger: 0.2,
-    ease: 'power3.out'
-});
+// The animations for .card, .skill-category, and .writing-card 
+// have been removed to ensure the content is always visible 
+// regardless of layout shifts caused by media loading.
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -129,4 +94,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
+});
+
+// Refresh ScrollTrigger after images and videos load
+window.addEventListener('load', () => {
+    ScrollTrigger.refresh();
 });
