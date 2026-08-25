@@ -1,14 +1,14 @@
 :root {
-    --bg-main: #070707;
-    --bg-card: #121212;
-    --bg-alt: #0a0a0a;
-    --text-main: #d4d4d4;
+    --bg-main: #0D0D0D;
+    --bg-card: #0D0D0D;
+    --bg-alt: #0D0D0D;
+    --text-main: #FFFFFF;
     --text-muted: #888888;
-    --accent-yellow: #d9b310;
-    --accent-dark-yellow: #9e820b;
+    --accent-yellow: #F7BD03;
+    --accent-dark-yellow: #F7BD03;
 
     --font-heading: 'Cinzel', serif;
-    --font-body: 'Inter', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
 }
 
 * {
@@ -75,7 +75,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 4rem;
-    background: rgba(7, 7, 7, 0.8);
+    background: rgba(13, 13, 13, 0.8);
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: all 0.3s ease;
@@ -84,7 +84,7 @@ a {
 
 .navbar.scrolled {
     padding: 1rem 4rem;
-    background: rgba(7, 7, 7, 0.98);
+    background: rgba(13, 13, 13, 0.98);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -135,7 +135,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(7, 7, 7, 0.2) 0%, rgba(7, 7, 7, 0.85) 50%, rgba(7, 7, 7, 0.95) 100%);
+    background: linear-gradient(to bottom, rgba(13, 13, 13, 0.2) 0%, rgba(13, 13, 13, 0.85) 50%, rgba(13, 13, 13, 0.95) 100%);
     z-index: 1;
 }
 
@@ -198,7 +198,7 @@ a {
 }
 
 .btn:hover {
-    color: #000;
+    color: #0D0D0D;
 }
 
 .btn:hover::before {
@@ -402,7 +402,7 @@ a {
 
 /* Contact */
 .contact {
-    background: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.95)), url('assets/lastpage.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.95)), url('assets/lastpage.png') no-repeat center center/cover;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     min-height: 100vh;
     display: flex;
