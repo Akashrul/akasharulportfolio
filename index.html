@@ -67,20 +67,35 @@
                 <div class="card">
                     <h3>Experience</h3>
                     <p>Worked as an Assistant Director in 3 short films, gaining practical experience in planning, coordination, and on-set execution.</p>
+                    <div style="margin-top: 2.5rem;">
+                        <strong style="color: var(--text-main); font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                            <span style="color: var(--accent-dark-yellow); font-size: 1.2rem;">▹</span> Acting & Direction
+                        </strong>
+                        <p style="margin-top: 0.5rem; color: var(--text-muted);">Acted and directed in one short film.<br><strong style="color: var(--text-main);">Project Name:</strong> Buffun</p>
+                        <div style="margin-top: 1rem; width: 100%; border-radius: 5px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1);">
+                             <img src="assets/buffun_placeholder.jpg" alt="Buffun Project Placeholder" style="width: 100%; display: block; object-fit: cover; aspect-ratio: 16/9; background: #222; text-align: center; color: var(--text-muted); line-height: 150px; font-size: 0.9rem;" onerror="this.outerHTML='<div style=\'width: 100%; aspect-ratio: 16/9; background: #222; display: flex; align-items: center; justify-content: center; color: var(--text-muted); border: 1px dashed var(--accent-dark-yellow);\'>Buffun Project Image Space</div>'">
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
                     <h3>Projects</h3>
                     <div style="margin-top: 1.5rem;">
-                        <div style="margin-bottom: 1.5rem;">
+                        <div style="margin-bottom: 2rem;">
                             <strong style="color: var(--text-main); font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
                                 <span style="color: var(--accent-dark-yellow); font-size: 1.2rem;">▹</span> Short Films
                             </strong>
-                            <div style="margin-top: 1rem; width: 100%;">
-                                <video controls style="width: 100%; display: block; border-radius: 5px; border: 1px solid var(--accent-dark-yellow); background: #000;">
-                                    <source src="assets/shortfilm.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                            <p style="color: var(--text-muted); margin-top: 0.5rem;">3 Short Film Posters</p>
+                            <div class="posters-grid">
+                                <div class="poster-placeholder">Poster 1</div>
+                                <div class="poster-placeholder">Poster 2</div>
+                                <div class="poster-placeholder">Poster 3</div>
                             </div>
+                        </div>
+                        <div style="margin-bottom: 2rem;">
+                            <strong style="color: var(--text-main); font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
+                                <span style="color: var(--accent-dark-yellow); font-size: 1.2rem;">▹</span> AI Short Film
+                            </strong>
+                            <p style="color: var(--text-muted); margin-top: 0.5rem;">Under My Direction</p>
                         </div>
                         <div>
                             <strong style="color: var(--text-main); font-size: 1.1rem; display: flex; align-items: center; gap: 10px;">
@@ -97,19 +112,36 @@
         </div>
     </section>
 
+    <!-- Photography Section -->
+    <section class="photography section" id="photography">
+        <div class="container">
+            <h2 class="section-title text-center">My Photographs</h2>
+            <div class="photography-grid">
+                <div class="photo-placeholder">Photo 1</div>
+                <div class="photo-placeholder">Photo 2</div>
+                <div class="photo-placeholder">Photo 3</div>
+                <div class="photo-placeholder">Photo 4</div>
+                <div class="photo-placeholder">Photo 5</div>
+                <div class="photo-placeholder">Photo 6</div>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section class="skills section" id="skills">
         <div class="container">
             <h2 class="section-title text-center">My Arsenal</h2>
             <div class="skills-wrapper">
                 <div class="skill-category">
-                    <h3>Assistant Director Key Skills</h3>
+                    <h3>Creative Strengths</h3>
                     <ul>
-                        <li><strong>Strong Prompting & AI Research:</strong> Able to create effective, detailed prompts and use AI tools to support creative development, visualisation, research, and pre-production work.</li>
-                        <li><strong>Online & Offline Research:</strong> Skilled in gathering references, understanding subjects, developing ideas, and supporting screenplay development.</li>
-                        <li><strong>Creative Research:</strong> Location scouting, character studies, visual references, and real-world detailing.</li>
-                        <li><strong>Pre-Production Support:</strong> Screenplay breakdowns, scene preparation, location research, shot references, and continuity tracking.</li>
-                        <li><strong>Story & Screenplay Development:</strong> Developing stories, scenes, characters, and cinematic ideas with attention to detail.</li>
+                        <li><strong>Action & Thriller:</strong> Strong interest in Action & Thriller storytelling.</li>
+                        <li><strong>Raw Action & Drama:</strong> Able to write a raw rooted action sequence with poetic love drama.</li>
+                        <li><strong>Emotional Depth:</strong> Skilled at developing action sequences with emotional and motivational backdrops.</li>
+                        <li><strong>Collaboration:</strong> Comfortable contributing ideas during creative discussions.</li>
+                        <li><strong>Poetic Expression:</strong> Able to write Tamil quotes and short lyrical pieces.</li>
+                        <li><strong>Language Expertise:</strong> Strong Tamil language knowledge and storytelling.</li>
+                        <li><strong>Team Player:</strong> Adaptable and able to easily involve myself in a team, communication, decision-making, and crisis-management abilities.</li>
                     </ul>
                 </div>
                 <div class="skill-category">
@@ -123,6 +155,20 @@
                     </ul>
                 </div>
             </div>
+            
+            <div class="skills-wrapper" style="margin-top: 4rem;">
+                <div class="skill-category" style="grid-column: 1 / -1;">
+                    <h3>Assistant Director Key Skills</h3>
+                    <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                        <li><strong>Strong Prompting & AI Research:</strong> Able to create effective, detailed prompts and use AI tools to support creative development, visualisation, research, and pre-production work.</li>
+                        <li><strong>Online & Offline Research:</strong> Skilled in conducting both online and offline research to gather references, understand subjects, develop ideas, and support story and screenplay development.</li>
+                        <li><strong>Creative Research:</strong> Capable of researching locations, characters, visual references, films, themes, and real-world details to strengthen the storytelling process.</li>
+                        <li><strong>Pre-Production Support:</strong> Interested in assisting with screenplay breakdowns, scene preparation, location research, shot references, continuity, and other pre-production activities.</li>
+                        <li><strong>Story & Screenplay Development:</strong> Strong interest in developing stories, scenes, characters, and cinematic ideas with attention to detail.</li>
+                        <li><strong>Film & Visual Knowledge:</strong> Familiar with basic filmmaking concepts, camera movements, shot composition, visual storytelling, and cinematic references.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -133,6 +179,9 @@
             <div class="writing-intro">
                 <p><strong>Writing Style:</strong> Focuses on emotion, imagery, relationships, beauty, and human feelings, often expressed through poetic Tamil language. I enjoy transforming simple emotions and visual ideas into memorable lines, quotes, and lyrical expressions.</p>
                 <p><strong>Language Proficiency:</strong> Tamil (Fluent; strong knowledge of language, dialogue, quotes), English (Good working proficiency).</p>
+                <div style="margin-top: 3rem;">
+                    <a href="assets/anandha_poetry.pdf" class="btn" target="_blank" download>Download Anandha Poetry PDF</a>
+                </div>
             </div>
             <div class="writing-grid">
                 <div class="writing-card">
