@@ -96,6 +96,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Photography View All Button
+const viewAllBtn = document.getElementById('view-all-photos');
+if (viewAllBtn) {
+    viewAllBtn.addEventListener('click', () => {
+        const hiddenPhotos = document.querySelectorAll('.hidden-photo');
+        hiddenPhotos.forEach(photo => {
+            photo.classList.remove('hidden-photo');
+        });
+        viewAllBtn.style.display = 'none'; // Hide the button after revealing
+        
+        // Refresh GSAP ScrollTrigger if any
+        setTimeout(() => {
+            ScrollTrigger.refresh();
+        }, 100);
+    });
+}
+
 // Refresh ScrollTrigger after images and videos load
 window.addEventListener('load', () => {
     ScrollTrigger.refresh();
