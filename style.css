@@ -8,7 +8,7 @@
     --accent-dark-yellow: #F7BD03;
 
     --font-heading: 'Cinzel', serif;
-    --font-body: 'Montserrat', sans-serif;
+    --font-body: 'Outfit', sans-serif;
 }
 
 * {
@@ -126,7 +126,7 @@ a {
     background: url('assets/firstpage.png') no-repeat center center/contain;
     text-align: center;
     overflow: hidden;
-    padding-bottom: 2vh;
+    padding-bottom: 0;
 }
 
 .hero-overlay {
