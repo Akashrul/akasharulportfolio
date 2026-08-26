@@ -126,7 +126,7 @@ a {
     background: url('assets/firstpage.png') no-repeat center center/contain;
     text-align: center;
     overflow: hidden;
-    padding-bottom: 4vh;
+    padding-bottom: 2vh;
 }
 
 .hero-overlay {
@@ -149,7 +149,7 @@ a {
     font-size: 6rem;
     font-weight: 700;
     letter-spacing: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--text-main);
 }
 
@@ -157,13 +157,13 @@ a {
     font-size: 1.5rem;
     color: var(--accent-dark-yellow);
     letter-spacing: 5px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .tagline {
     font-size: 1.1rem;
     color: var(--text-muted);
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
